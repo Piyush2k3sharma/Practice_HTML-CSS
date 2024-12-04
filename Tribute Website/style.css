@@ -8,7 +8,7 @@
     background-color: #687CD0;
     min-height: 100vh;
     /* width: 50vw; */
-    border: 10px solid whitesmoke;
+    border: 10px solid rgb(245, 245, 245);
 }
 .content{
     margin: 0 12%;
@@ -29,9 +29,8 @@
     align-items: center;
 }
 .profile_image img{
-    width: 45%;
-    height: 45%;
-    border-radius: 2%;
+    width: 80%;
+    padding: 2%;
 }
 .profile_details{
     width: 50%;
@@ -104,4 +103,133 @@
     font-style: italic;
     padding-left: 1%;
     color: black;
+}
+
+
+@media screen and (max-width : 600px) {
+    /* mobile */
+    .profile_section{
+        flex-direction: column;
+    }
+    .profile_image{
+        width: 100%;
+    }
+    .profile_image img{
+        width: 50%;
+    }
+    .profile_details{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+    .profile_details h4{
+        font-size: 28px;
+    }
+    .about{
+        margin-top: 4%;
+    }
+    .about p{
+        margin-top: 4%;
+    }
+    .records{
+        margin-top: 4%;
+    }
+    .records p{
+        margin-top: 4%;
+        text-align: justify;
+    }
+    .link{
+        justify-content: center;
+        align-items: center;
+        margin : 4% 4%;
+        font-size: 18px;
+    }
+    .link a{
+        margin-left: 2%;
+    }
+}
+
+@media screen and ((max-width : 768px )and (min-width :601px)) {
+    /* Tablet portrait*/
+    .profile_section{
+        flex-direction: column;
+    }
+    .profile_image{
+        width: 100%;
+    }
+    .profile_image img{
+        width: 50%;
+    }
+    .profile_details{
+        width: 100%;
+        font-size: 44px;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile_details h4{
+        font-size: 32px;
+    }
+    .about{
+        margin-top: 4%;
+    }
+    .about p{
+        margin-top: 4%;
+    }
+    .records{
+        margin-top: 4%;
+    }
+    .records p{
+        margin-top: 4%;
+    }
+    .link{
+        justify-content: center;
+        align-items: center;
+        margin : 4% 4%;
+    }
+    .link a{
+        margin-left: 2%
+    };
+}
+
+@media screen and ((max-width : 1005px )and (min-width :769px)) {
+    /* Tablet landscape*/
+    .profile_section{
+        flex-direction: column;
+    }
+    .profile_image{
+        width: 100%;
+    }
+    .profile_image img{
+        width: 50%;
+    }
+    .profile_details{
+        width: 100%;
+        font-size: 46px;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile_details h4{
+        font-size: 34px;
+    }
+    .about{
+        margin-top: 4%;
+    }
+    .about p{
+        margin-top: 4%;
+    }
+    .records{
+        margin-top: 4%;
+    }
+    .records p{
+        margin-top: 4%;
+    }
+    .link{
+        justify-content: center;
+        align-items: center;
+        margin : 4% 4%;
+    }
+    .link a{
+        margin-left: 2%
+    };
 }
